@@ -1,4 +1,4 @@
-package com.example.munegowda;
+package com.kuruvatech.munegowda;
 
 import org.junit.Test;
 

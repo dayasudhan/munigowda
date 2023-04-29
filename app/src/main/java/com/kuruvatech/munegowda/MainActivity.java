@@ -1,4 +1,4 @@
-package com.example.munegowda;
+package com.kuruvatech.munegowda;
 
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +14,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.munegowda.databinding.ActivityMainBinding;
+import com.kuruvatech.munegowda.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

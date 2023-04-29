@@ -1,4 +1,4 @@
-package com.example.munegowda.ui.home;
+package com.kuruvatech.munegowda.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.munegowda.databinding.FragmentHomeBinding;
+import com.kuruvatech.munegowda.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 
