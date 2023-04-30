@@ -45,11 +45,69 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Munegowda.NoActionBar">
-        </activity>
+android:exported="true"
+            android:name="com.kuruvatech.munegowda.FeedDetail"
+            android:theme="@style/AppFullScreenTheme"
+            android:parentActivityName="com.kuruvatech.munegowda.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name="com.kuruvatech.munegowda.SingleViewActivity" />
+        <activity
+	android:exported="true"
+            android:name="com.kuruvatech.munegowda.YouTubePlayerAcivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+	android:exported="true"
+            android:name="com.kuruvatech.munegowda.MinimalPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+	android:exported="true"
+            android:name="com.kuruvatech.munegowda.CustomPlayerControlActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+	android:exported="true"
+            android:name="com.kuruvatech.munegowda.YouTubePlayerFragmentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+	android:exported="true"
+            android:name="com.kuruvatech.munegowda.FullScreenViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+<!--        <activity-->
+<!--        android:name=".SettingsActivity"-->
+<!--        android:configChanges="orientation|keyboardHidden|screenSize" />-->
+        <activity
+	android:exported="true"
+            android:name="com.kuruvatech.munegowda.CustomMediaPlayer"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <meta-data
+	android:exported="true"
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+	android:exported="true"
+            android:name="com.kuruvatech.munegowda.MainActivity"
+            android:label="@string/titletext"
+            android:theme="@style/AppTheme"></activity>
+        <service
+	android:exported="true" 
+	android:name="com.kuruvatech.munegowda.FireIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.kuruvatech.munegowda.FireMsgService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+	android:exported="true"
+            android:name="com.kuruvatech.munegowda.NotificationListener"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
     </application>
 
 </manifest>
